@@ -1,0 +1,25 @@
+site:
+  title: SDP-IAC
+  url: http://localhost
+  start_page: general::index.adoc
+content:
+  sources:
+  - url: .
+    branches: HEAD
+    start_path: general
+  - url: .
+    branches: HEAD
+    start_path: ecs-ec2
+  - url: .
+    branches: HEAD
+    start_path: ecs-fargate
+  - url: .
+    branches: HEAD
+    start_path: kubernetes
+  - url: .
+    branches: HEAD
+    start_path: openshift
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true

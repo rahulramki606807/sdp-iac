@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Section 1.1 - Preparing to Run the Installer :: SDP-IAC</title>
+    <link rel="canonical" href="http://localhost/openshift/1/guides/1_1_Prepare_To_Install.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost">SDP-IAC</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="openshift" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Openshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">OpenShift</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="1_0_Deploy_Tools_Overview.html">Section 1 - Deploying the DevOps Tools</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="1_1_Prepare_To_Install.html">Preparing to Run the Installer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_2_Run_Installer.html">Running the Installer Script</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="2_0_Pipeline_Config_Overview.html">Setting Up a Pipeline</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2_1_Pipeline_Planning.html">Pipeline Planning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2_2_Pipeline_Config.html">Creating the Pipeline Configuration Repository</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="3_0_Application_Environment_Overview.html">Setting up the Application Environments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_1_Application_Environments.html">Creating the Application Environments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_2_Helm_Chart_Repo.html">Setting up the Helm Chart Repository</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Openshift</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">ECS-EC2</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-ec2/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">ECS-Fargate</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-fargate/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">General</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../general/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Kubernetes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../kubernetes/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Openshift</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../general/1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Openshift</a></li>
+    <li><a href="1_0_Deploy_Tools_Overview.html">Section 1 - Deploying the DevOps Tools</a></li>
+    <li><a href="1_1_Prepare_To_Install.html">Preparing to Run the Installer</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///Users/rahulramakrishnan/Documents/github/antora/sdp-iac/openshift/modules/guides/pages/1_1_Prepare_To_Install.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<h1 class="page">Section 1.1 - Preparing to Run the Installer</h1>
+<div class="sect1">
+<h2 id="_log_into_openshift"><a class="anchor" href="#_log_into_openshift"></a>Log into OpenShift</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Run the command here, replacing the URI shown with the one for your
+cluster&#8217;s master node(s). The URI is the one you use to reach your
+OpenShift web console.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>$ oc login master.ocp.example.com:8443</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When prompted, use the login for your cluster-admin User.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_clone_the_sdp_helm_chart_repository"><a class="anchor" href="#_clone_the_sdp_helm_chart_repository"></a>Clone the sdp-helm-chart Repository</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To clone the , run one of the following commands:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>## cloning via ssh
+$ git clone git@github.com:boozallen/sdp-helm-chart.git
+## cloning via https
+$ git clone https://github.com/boozallen/sdp-helm-chart.git</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_create_your_values_file"><a class="anchor" href="#_create_your_values_file"></a>Create Your Values File</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>From the root of your new sdp-helm-chart directory, copy
+values.template.yaml to values.yaml.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>$ cp values.template.yaml values.yaml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The installer script will use the settings defined in this file when
+deploying the SDP.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Note:</strong></div>
+<div class="paragraph">
+<p>This extra step is intended to prevent users from inadvertently pushing
+their values.yaml file, which may contain sensitive information.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modify_the_values_file"><a class="anchor" href="#_modify_the_values_file"></a>Modify the Values File</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The only value that you <em>must</em> change in values.yaml is <code>global.domain</code>.
+You should change it to match the subdomain your cluster uses for
+exposed routes. To easily see what that subdomain is for your cluster,
+you can run <code>oc get routes -n default</code> and look at the entries under the
+HOST/PORT column. It will be everything past the first period (.), so if
+one of the entries is <code>docker-registry-default.apps.ocp.example.com</code>
+then values.yaml should contain:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">global:
+  domain: apps.ocp.example.com</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also add to your values file any of the values described in the <a href="https://github.com/boozallen/sdp-helm-chart">sdp-helm-chart repository</a>
+README.</p>
+</div>
+<div class="paragraph">
+<p>While the SDP installation will deploy SonarQube and other tools, you
+can opt not to install them by changing their "enable" setting from
+<code>true</code> to <code>false</code>.</p>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

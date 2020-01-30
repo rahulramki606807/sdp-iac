@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: SDP-IAC</title>
+    <link rel="canonical" href="http://localhost/openshift/1/guides/3_2_Helm_Chart_Repo.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost">SDP-IAC</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="openshift" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Openshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">OpenShift</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="1_0_Deploy_Tools_Overview.html">Section 1 - Deploying the DevOps Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_1_Prepare_To_Install.html">Preparing to Run the Installer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_2_Run_Installer.html">Running the Installer Script</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="2_0_Pipeline_Config_Overview.html">Setting Up a Pipeline</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2_1_Pipeline_Planning.html">Pipeline Planning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2_2_Pipeline_Config.html">Creating the Pipeline Configuration Repository</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="3_0_Application_Environment_Overview.html">Setting up the Application Environments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_1_Application_Environments.html">Creating the Application Environments</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="3_2_Helm_Chart_Repo.html">Setting up the Helm Chart Repository</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Openshift</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">ECS-EC2</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-ec2/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">ECS-Fargate</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-fargate/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">General</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../general/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Kubernetes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../kubernetes/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Openshift</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../general/1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Openshift</a></li>
+    <li><a href="3_0_Application_Environment_Overview.html">Setting up the Application Environments</a></li>
+    <li><a href="3_2_Helm_Chart_Repo.html">Setting up the Helm Chart Repository</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///Users/rahulramakrishnan/Documents/github/antora/sdp-iac/openshift/modules/guides/pages/3_2_Helm_Chart_Repo.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect1">
+<h2 id="_section_3_2_setting_up_the_helm_chart_repository"><a class="anchor" href="#_section_3_2_setting_up_the_helm_chart_repository"></a>Section 3.2 - Setting up the Helm Chart Repository</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h3>
+<div class="paragraph">
+<p>To achieve disaster recovery, auditability, rollbacks, and
+infrastructure as code, the OpenShift library deploys applications using
+Helm from a chart stored in a GitHub repository.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://helm.sh/">Helm</a> is a tool for templating and managing Kubernetes configuration files
+and, by extension, OpenShift configuration files. Any element in
+OpenShift can be expressed as as yaml or JSON. Helm lets you take that
+yaml and organize it, turn them into a template, and, through tiller,
+use them to deploy to your cluster.</p>
+</div>
+<div class="paragraph">
+<p>This Helm chart repository is what the <a href="/sdp-docs/pages/libraries/openshift/README.html">OpenShift SDP library</a> will use to deploy your
+application to OpenShift. In it, you should create a Helm chart that
+defines the various <a href="https://docs.openshift.com/container-platform/3.11/dev_guide/deployments/how_deployments_work.html">DeploymentConfigs</a>, <a href="https://docs.openshift.com/container-platform/3.11/architecture/core_concepts/pods_and_services.html#services">Services</a>, <a href="https://docs.openshift.com/container-platform/3.11/dev_guide/routes.html">Routes</a>, and other objects your application needs to
+function.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_a_repository"><a class="anchor" href="#_create_a_repository"></a>Create a Repository</h3>
+<div class="paragraph">
+<p>Use an SCM like GitHub to create a repository to store your Helm chart.
+This way you can access, share and maintain the Helm chart like any
+other piece of code. Name it whatever you like, but
+helm-configuration-repository makes sense. It can be public or private,
+so long as the GitHub account Jenkins is using can read from it and
+write back to it.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_initialize_the_helm_repository"><a class="anchor" href="#_initialize_the_helm_repository"></a>Initialize The Helm Repository</h3>
+<div class="paragraph">
+<p>Assuming you&#8217;ve created an empty GitHub repository for your helm chart,
+you can run:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">helm create &lt;repo_name&gt;
+cd &lt;repo_name&gt;
+git remote add origin &lt;helm repo url&gt;
+git add --all
+git commit -m "initializing chart repo"
+git push -u origin master</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once that&#8217;s done you should</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Delete the yaml files that were automatically created when
+<code>helm create</code> was called. These are example helm templates, and we don&#8217;t
+need them.</p>
+</li>
+<li>
+<p>Delete the contents of templates/_helpers.tpl and templates/NOTES.txt.
+We want to keep those files, but provide our own content.</p>
+</li>
+<li>
+<p>Update <em>Chart.yaml</em> to properly describe your new chart.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>For more information on Helm charts, check out the <a href="https://helm.sh/docs/">Helm Documentation</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sdp_helm_conventions"><a class="anchor" href="#_sdp_helm_conventions"></a>SDP Helm Conventions</h3>
+<div class="paragraph">
+<p>SDP pushes and pulls to this chart repository to keep it up to date with
+the image tags of deployed containers.</p>
+</div>
+<div class="paragraph">
+<p>For each application repository that SDP will be building, add a key
+under <code>image_shas</code> in <em>values.yaml</em>. If there is no <code>image_shas</code> key,
+create one.</p>
+</div>
+<div class="paragraph">
+<p>As an example, if there was a repository called <code>sample-app</code>, your
+<code>values.yaml</code> would include:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-YAML hljs" data-lang="YAML">image_shas:
+    sample_app:</code></pre>
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Warning:</strong></div>
+<div class="paragraph">
+<p>Because YAML key&#8217;s cannot contain hyphens, the openshift converts them
+to underscores and expects that value under image_shas</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Your template would then be able to specify the image for a
+deployment via:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>image: docker-registry.default.svc:5000/demo/sample-app:{{ .Values.image_shas.sample_app }}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>At this point, you should take some time to finish fleshing out your
+Helm chart to reflect how you wish to deploy your app.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_information_on_writing_templates"><a class="anchor" href="#_information_on_writing_templates"></a>Information on Writing Templates</h3>
+<div class="paragraph">
+<p>The Helm documentation on writing <a href="https://docs.helm.sh/developing_charts/">charts</a> and <a href="https://docs.helm.sh/chart_template_guide/">templates</a> is a good place to start learning
+how to create your helm chart. There are a few additional tips that are
+useful for writing charts and templates for OpenShift.</p>
+</div>
+<div class="paragraph">
+<p>The first useful tip is that it&#8217;s possible to create objects in
+OpenShift using the web console, and then view its corresponding yaml
+file either by using the "edit YAML" option or using the OpenShift CLI.
+The challenge is identifying and deleting fields that are automatically
+generated by the cluster or added by default. This removes unnecessary
+clutter from the template and, in the case of automatically generated
+fields such as the <code>resourceVersion</code>, prevents errors in the cluster.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ oc get all -o yaml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The second useful tip, which mostly applies if you are copying YAML
+files from OpenShift, is that the <code>apiVersion</code> field for
+OpenShift-exclusive object types need to be modified for Helm to process
+the template correctly. Below is a table from an <a href="https://blog.openshift.com/getting-started-helm-openshift/">OpenShift blog post</a> mapping the object
+types, <code>Kind</code>, to the appropriate <code>apiVersion</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">apiVersion</th>
+<th class="tableblock halign-left valign-top">Kind</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">apps.openshift.io/v1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DeploymentConfig</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">authorization.openshift.io/v1, rbac/v1beta1*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ClusterRole</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">authorization.openshift.io/v1, rbac/v1beta1*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ClusterRoleBinding</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">authorization.openshift.io/v1, rbac/v1beta1*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Role</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">authorization.openshift.io/v1, rbac/v1beta1*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RoleBinding</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">build.openshift.io/v1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Build</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">build.openshift.io/v1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BuildConfig</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">image.openshift.io/v1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Image</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">image.openshift.io/v1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ImageStream</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">project.openshift.io/v1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Project</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">route.openshift.io/v1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Route</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">template.openshift.io/v1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Template</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">user.openshift.io/v1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">user.openshift.io/v1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The third tip is knowing that each container being deployed likely needs
+at least three things: a DeploymentConfig, a Service, and a Route. The
+DeploymentConfig manages creating and running the container, the Service
+makes it possible to connect to that container within the cluster, and
+the Route exposes that service so it can be connected to from outside
+the cluster. You can see example templates for each of these in the <a href="https://github.com/boozallen/sdp-helm-chart">sdp-helm-chart</a>
+repository, which is itself a Helm chart.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_the_values_files"><a class="anchor" href="#_add_the_values_files"></a>Add The Values Files</h3>
+<div class="paragraph">
+<p>In addition to the <em>values.yaml</em> file created when <code>helm create</code> was
+run, you need a <em>values.&lt;APP_ENV&gt;.yaml</em> file for each application
+environment you created when running <em>provision_app_envs.sh</em>. Be sure to
+substitute <em>&lt;APP_ENV&gt;</em> with the "short_name" of the application
+environment. For example, if you created a <em>dev</em> and <em>prod</em> environment,
+you might create those files with the command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-cp hljs" data-lang="cp">values.yaml values.dev.yaml
+cp values.yaml values.prod.yaml</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The purpose of these separate files is so that you can provide separate
+configurations (database URLs, names, etc.) for different environments.
+Now, whenever you use the <code>deploy_to dev</code> step in your pipeline, it will
+deploy a helm chart using <em>values.dev.yaml</em>.</p>
+</div>
+<div class="paragraph">
+<p>The SDP will automatically update the image sha value discussed earlier,
+but you should now modify the different values files with their
+environment-specifc variables.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_updating_the_pipeline_configuration"><a class="anchor" href="#_updating_the_pipeline_configuration"></a>Updating the Pipeline Configuration</h3>
+<div class="paragraph">
+<p>If you recall from earlier in this guide, in the page on the <a href="/sdp-docs/pages/deployment-guides/openshift/2_2_Pipeline_Config.html">Pipeline Configuration Repository</a>, there
+were some settings for the <a href="/sdp-docs/pages/libraries/openshift/README.html">OpenShift SDP library</a> that may not have been clear before this
+point in the guide.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">libraries{
+  //...
+  openshift{
+    url = "https://my-openshift-cluster.ocp.example.com:8443"
+    helm_configuration_repository = "https://github.com/kottoson-bah/sdp-example-helm-config.git"
+    helm_configuration_repository_credential = github
+    tiller_namespace = my-app-tiller
+    tiller_credential = my-app-tiller-credential
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s what you should now put for each of these settings</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Provisioned OpenShift Infrastructure</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Setting</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The master URL of your OpenShift cluster i.e. the one you use to
+log in</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">helm_configuration_repository</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The URL for your helm configuration
+repository i.e. the one you use to clone it using https</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">helm_configuration_repository_credential</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The ID of the
+username/password credential in Jenkins that can be used to read to and
+write from your helm repository</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tiller_namespace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The OpenShift namespace/project hosting the tiller
+server (e.g. demo-tiller)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tiller_credential</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The credential for the tiller server you created in
+the previous section (e.g. demo-tiller)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Also, if you haven&#8217;t already, update the application environments in
+your pipeline config file to reflect the application environments you
+have just deployed.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_closing_summary"><a class="anchor" href="#_closing_summary"></a>Closing Summary</h3>
+<div class="paragraph">
+<p>In order to enable automatic deployments to OpenShift, this guide
+covered the following:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Setting up Application Environments on OpenShift using <a href="https://github.com/boozallen/sdp-helm-chart/blob/master/resources/helm/provision_app_envs.sh">provision_app_envs.sh</a></p>
+</li>
+<li>
+<p>Creating a Helm chart repository that defines how to deploy your
+application</p>
+</li>
+<li>
+<p>Modifying Jenkins and the pipeline config file to use the helm chart
+repository and the provisioned application environments</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_next_steps"><a class="anchor" href="#_next_steps"></a>Next Steps</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/sdp-docs/pages/how-to/helm-multitenancy.html">More on Helm multitenancy in OpenShift</a></p>
+</li>
+<li>
+<p><a href="/sdp-docs/pages/libraries/openshift/README.html">More on the OpenShift SDP library</a></p>
+</li>
+<li>
+<p><a href="https://docs.helm.sh/developing_charts/">More on writing Helm charts</a></p>
+</li>
+<li>
+<p><a href="https://github.com/kottoson-bah/sdp-example-helm-config">Example Helm chart</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

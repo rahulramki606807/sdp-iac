@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: SDP-IAC</title>
+    <link rel="canonical" href="http://localhost/openshift/1/guides/2_2_Pipeline_Config.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost">SDP-IAC</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="openshift" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Openshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">OpenShift</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="1_0_Deploy_Tools_Overview.html">Section 1 - Deploying the DevOps Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_1_Prepare_To_Install.html">Preparing to Run the Installer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_2_Run_Installer.html">Running the Installer Script</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="2_0_Pipeline_Config_Overview.html">Setting Up a Pipeline</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2_1_Pipeline_Planning.html">Pipeline Planning</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="2_2_Pipeline_Config.html">Creating the Pipeline Configuration Repository</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="3_0_Application_Environment_Overview.html">Setting up the Application Environments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_1_Application_Environments.html">Creating the Application Environments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_2_Helm_Chart_Repo.html">Setting up the Helm Chart Repository</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Openshift</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">ECS-EC2</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-ec2/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">ECS-Fargate</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-fargate/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">General</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../general/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Kubernetes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../kubernetes/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Openshift</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../general/1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Openshift</a></li>
+    <li><a href="2_0_Pipeline_Config_Overview.html">Setting Up a Pipeline</a></li>
+    <li><a href="2_2_Pipeline_Config.html">Creating the Pipeline Configuration Repository</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///Users/rahulramakrishnan/Documents/github/antora/sdp-iac/openshift/modules/guides/pages/2_2_Pipeline_Config.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect1">
+<h2 id="_section_2_2_creating_the_pipeline_configuration_repository"><a class="anchor" href="#_section_2_2_creating_the_pipeline_configuration_repository"></a>Section 2.2 - Creating the Pipeline Configuration Repository</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are as many ways to create a set up a Pipeline Configuration
+Repository as there are ways to create software. This guide should
+provide a good foundation to build off of.</p>
+</div>
+<div class="paragraph">
+<p>This page covers the creation of a simple pipeline configuration
+repository, a repository containing files that define one or more
+pipelines, with a single governance tier in the root. <a href="sdp-docs/pages/jte/docs/pages/Governance/index.html">You can learn more about pipeline governance here</a>.</p>
+</div>
+<div class="sect2">
+<h3 id="_create_a_repository"><a class="anchor" href="#_create_a_repository"></a>Create a Repository</h3>
+<div class="paragraph">
+<p>Use an SCM like GitHub to <a href="https://help.github.com/articles/create-a-repo/">create a repository</a> to store your pipeline configuration. This way
+you can access, share, and maintain pipeline configuration like any
+other piece of code.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_a_pipeline_template"><a class="anchor" href="#_create_a_pipeline_template"></a>Create a Pipeline Template</h3>
+<div class="paragraph">
+<p>At the root of this repository create a file called <code>Jenkinsfile</code>. This
+is the default pipeline template. A simple pipeline template might look
+like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">static_code_analysis()
+build()
+
+on_merge to: develop, {
+  deploy_to dev
+}
+
+on_merge to: master, {
+  deploy_to prod
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Note:</strong></div>
+<div class="paragraph">
+<p><a href="/sdp-docs/pages/jte/docs/pages/Templating/index.html">You can learn more about writing pipeline templates here</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_pipeline_config_groovy"><a class="anchor" href="#_create_pipeline_config_groovy"></a>Create pipeline_config.groovy</h3>
+<div class="paragraph">
+<p>Also at the root of your pipeline configuration repository, create a
+file called <code>pipeline_config.groovy</code>. Since this file will (likely) be
+in your global governance tier, you modify it to make changes that apply
+to every pipeline. A simple pipeline config file might look like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">application_environments{
+  dev{
+    short_name = "dev"
+    long_name = "Develop"
+  }
+  prod{
+    short_name = "prod"
+    long_name = "prod"
+  }
+}
+
+keywords{
+  master = /^[Mm]aster$/
+  develop = /^[Dd]evelop$/
+}
+
+libraries{
+  github_enterprise
+  sonarqube
+  docker{
+    registry = "docker-registry.default.svc:5000"
+    cred = "openshift-docker-registry"
+    repo_path_prefix = "my-app-images"
+  }
+  sdp{
+    images{
+      registry = "https://docker-registry.default.svc:5000"
+      repo = "sdp"
+      cred = "openshift-docker-registry"
+    }
+  }
+  openshift{
+    // More on these settings in the next section
+    url = "https://my-openshift-cluster.ocp.example.com:8443"
+    helm_configuration_repository = "https://github.com/kottoson-bah/sdp-example-helm-config.git"
+    helm_configuration_repository_credential = github
+    tiller_namespace = my-app-tiller
+    tiller_credential = my-app-tiller-credential
+  }
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Note:</strong></div>
+<a href="/sdp-docs/pages/jte/docs/pages/Templating/configuration_files/index.html"">You can learn more about writing pipeline config files here</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Important:</strong></div>
+The pipeline defined by this example won&#8217;t work until you&#8217;ve finished
+setting up your application environments in OpenShift and written your
+helm configuration repository, which is covered in the next section.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_about_the_example_pipeline_configuration"><a class="anchor" href="#_about_the_example_pipeline_configuration"></a>About The Example Pipeline Configuration</h3>
+<div class="paragraph">
+<p>This section explains how the example pipeline template and pipeline
+config file above work together to create a pipeline.</p>
+</div>
+<div class="sect3">
+<h4 id="_the_pipeline_template"><a class="anchor" href="#_the_pipeline_template"></a>The Pipeline Template</h4>
+<div class="paragraph">
+<p>Starting with the pipeline template, every pipeline created from <em>this</em>
+template will have these steps:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">static_code_analysis() // 1) Check the source code for bugs &amp; code smells
+build()                // 2) Build an artifact from the source code
+
+on_merge to: develop, {// 3a) if a merge to the develop branch triggered the build...
+  deploy_to dev        // 3b) deploy the application to the "dev" environment
+}
+
+on_merge to: master, {// 4a) if a merge to the master branch triggered the build...
+  deploy_to prod      // 4b) deploy the application to the "prod" environment
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now that the pipeline template has defined <em>what</em> the pipeline does,
+there needs to be a pipeline config file to define <em>how</em>. It needs <a href="/sdp-docs/pages/jte/docs/pages/Governance/index.html#library-selection"">libraries</a> to
+provide the implementation for the pipeline steps, <a href="/sdp-docs/pages/jte/docs/pages/Templating/primitives/application_environments.html"">application environments</a> to define the dev and
+prod environments being deployed to, and <a href="/sdp-docs/pages/jte/docs/pages/Templating/primitives/keywords.html"">keywords</a> for the variables <code>develop</code> and
+<code>master</code> being used.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_libraries"><a class="anchor" href="#_the_libraries"></a>The Libraries</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">libraries{
+  github_enterprise
+  sonarqube
+  docker{
+    registry = "docker-registry.default.svc:5000"
+    cred = "openshift-docker-registry"
+    repo_path_prefix = "my-app-images"
+  }
+  sdp{
+    images{
+      registry = "https://docker-registry.default.svc:5000"
+      repo = "sdp"
+      cred = "openshift-docker-registry"
+    }
+  }
+  openshift{
+    // More on these settings in the next section
+    url = "https://my-openshift-cluster.ocp.example.com:8443"
+    helm_configuration_repository = "https://github.com/kottoson-bah/sdp-example-helm-config.git"
+    helm_configuration_repository_credential = github
+    tiller_namespace = my-app-tiller
+    tiller_credential = my-app-tiller-credential
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For every step used in a pipeline template, something needs to define
+that step&#8217;s implementation. For the JTE, these step implementations most
+commonly come from "libraries", which are imported from a "library
+source". For this example pipeline, it&#8217;s assumed that the <a href="https://github.com/boozallen/sdp-libraries">sdp-libraries</a> library source
+is available, and any of the libraries it contains can be used.</p>
+</div>
+<div class="paragraph">
+<p>Five libraries are being imported here: github_enterprise, sonarqube,
+docker, sdp, and OpenShift. Below is a mapping of steps to the libraries
+that are being used.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">static_code_analysis() // sonarqube
+build()                // docker
+
+on_merge to: develop, {// github_enterprise
+  deploy_to dev        // openshift
+}
+
+on_merge to: master, {// github_enterprise
+  deploy_to prod      // openshift
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Although the sdp library doesn&#8217;t provide the implementation for any of
+the steps here, it&#8217;s being imported because both the SonarQube and
+OpenShift libraries depend on a step it defines.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Note:</strong></div>
+<div class="paragraph">
+<p><a href="/sdp-docs/pages/libraries/index.html">You can learn more about the SDP pipeline libraries here</a></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_application_environments"><a class="anchor" href="#_the_application_environments"></a>The Application Environments</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">application_environments{
+  dev{
+    short_name = "dev"
+    long_name = "Develop"
+  }
+  prod{
+    short_name = "prod"
+    long_name = "prod"
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <a href="/sdp-docs/pages/libraries/openshift/README.html">OpenShift library</a> uses <a href="/sdp-docs/pages/jte/docs/pages/Templating/primitives/application_environments.html">Application Environment primitives</a> to select which project in OpenShift to deploy to. For example,
+when the pipeline template calls <code>deploy to: dev</code>(which can also be read
+as <code>deploy(to: dev)</code>), it takes the <em>dev</em> application environment
+primitive object that we define here and uses its values in <a href="https://github.com/boozallen/sdp-libraries/blob/master/openshift/deploy_to.groovy">the deploy step</a>. The
+<code>short_name</code>, in particular, is used to select the target OpenShift
+project and which values.yaml file to use as part of the deployment.
+View the next section or the <a href="/sdp-docs/pages/libraries/openshift/README.html">OpenShift library</a> page for more details.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_keywords"><a class="anchor" href="#_the_keywords"></a>The Keywords</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">keywords{
+  master = /^[Mm]aster$/
+  develop = /^[Dd]evelop$/
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The <a href="/sdp-docs/pages/libraries/github_enterprise/README.html">github_enterprise library</a> uses <a href="/sdp-docs/pages/jte/docs/pages/Templating/primitives/keywords.html">Keyword primitives</a> to determine what kind of GitHub branch is being built. The
+steps <code>on_merge()</code>, <code>on_commit</code>, and <code>on_pull_request</code> take a regex
+expression as a parameter. These regex expressions have been stored as
+keywords to make the pipeline template more human-readable.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_closing_summary"><a class="anchor" href="#_closing_summary"></a>Closing Summary</h3>
+<div class="paragraph">
+<p>This pipeline configuration repository, with a single governance tier
+located in the base of the repository, contains two files: <em>Jenkinsfile</em>
+and <em>pipeline_config.groovy</em>. The default pipeline template,
+<em>Jenkinsfile</em>, defines the steps that each pipeline executes. The
+pipeline configuration file, <em>pipeline_config.groovy</em>, controls how
+those steps are run in the pipeline by selecting the libraries to
+implement those steps, the settings for those libraries, and any other
+pipeline primitives being used.</p>
+</div>
+<div class="paragraph">
+<p>Using the files in this example, pipelines will:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>test the source code using SonarQube</p>
+</li>
+<li>
+<p>build &amp; push a Docker container image</p>
+</li>
+<li>
+<p>depending on the pipeline trigger, deploy that container on OpenShift</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_next_steps"><a class="anchor" href="#_next_steps"></a>Next Steps</h3>
+<div class="paragraph">
+<p>You should be ready to move onto the next section, which covers creating
+a Helm chart repository. For more on the information covered in this
+section:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/sdp-docs/pages/jte/docs/pages/Templating/index.html">You can learn more about writing pipeline templates here</a></p>
+</li>
+<li>
+<p><a href="/sdp-docs/pages/jte/docs/pages/Templating/configuration_files/index.html">You can learn more about writing pipeline config files here</a></p>
+</li>
+<li>
+<p><a href="/sdp-docs/pages/libraries/index.html">You can learn more about the SDP pipeline libraries here</a></p>
+</li>
+<li>
+<p><a href="sdp-docs/pages/jte/docs/pages/Library_Development/index.html">You can learn more about writing your own pipeline libraries here</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

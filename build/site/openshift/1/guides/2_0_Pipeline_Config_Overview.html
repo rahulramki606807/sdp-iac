@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: SDP-IAC</title>
+    <link rel="canonical" href="http://localhost/openshift/1/guides/2_0_Pipeline_Config_Overview.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost">SDP-IAC</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="openshift" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Openshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">OpenShift</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="1_0_Deploy_Tools_Overview.html">Section 1 - Deploying the DevOps Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_1_Prepare_To_Install.html">Preparing to Run the Installer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_2_Run_Installer.html">Running the Installer Script</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="2_0_Pipeline_Config_Overview.html">Setting Up a Pipeline</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2_1_Pipeline_Planning.html">Pipeline Planning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2_2_Pipeline_Config.html">Creating the Pipeline Configuration Repository</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="3_0_Application_Environment_Overview.html">Setting up the Application Environments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_1_Application_Environments.html">Creating the Application Environments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_2_Helm_Chart_Repo.html">Setting up the Helm Chart Repository</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Openshift</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">ECS-EC2</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-ec2/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">ECS-Fargate</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-fargate/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">General</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../general/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Kubernetes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../kubernetes/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Openshift</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../general/1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Openshift</a></li>
+    <li><a href="2_0_Pipeline_Config_Overview.html">Setting Up a Pipeline</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///Users/rahulramakrishnan/Documents/github/antora/sdp-iac/openshift/modules/guides/pages/2_0_Pipeline_Config_Overview.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect1">
+<h2 id="_section_2_setting_up_a_pipeline"><a class="anchor" href="#_section_2_setting_up_a_pipeline"></a>Section 2 - Setting Up a Pipeline</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_section_2_overview"><a class="anchor" href="#_section_2_overview"></a>Section 2 Overview</h3>
+<div class="paragraph">
+<p>Once you have completed this section, you should have a Pipeline
+Configuration repository that defines a DevSecOps pipeline for your
+project or your business organization.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_before_you_begin"><a class="anchor" href="#_before_you_begin"></a>Before You Begin</h3>
+<div class="sect3">
+<h4 id="_you_should_have"><a class="anchor" href="#_you_should_have"></a>You Should Have&#8230;&#8203;</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Some idea of what you want from your automated pipeline</p>
+</li>
+<li>
+<p>A general understanding of the software that will be built, tested,
+and deployed with your pipeline</p>
+</li>
+<li>
+<p>Designed the components of your application to run in (Docker)
+containers</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_you_should_be_able_to"><a class="anchor" href="#_you_should_be_able_to"></a>You Should Be Able To&#8230;&#8203;</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Modify simple configuration files</p>
+</li>
+<li>
+<p><a href="https://help.github.com/articles/create-a-repo/">Create a GitHub</a> (or the equivalent in your SCM of choice)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

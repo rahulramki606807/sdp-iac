@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: SDP-IAC</title>
+    <link rel="canonical" href="http://localhost/openshift/1/guides/2_1_Pipeline_Planning.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost">SDP-IAC</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="openshift" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Openshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">OpenShift</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="1_0_Deploy_Tools_Overview.html">Section 1 - Deploying the DevOps Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_1_Prepare_To_Install.html">Preparing to Run the Installer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_2_Run_Installer.html">Running the Installer Script</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="2_0_Pipeline_Config_Overview.html">Setting Up a Pipeline</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="2_1_Pipeline_Planning.html">Pipeline Planning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2_2_Pipeline_Config.html">Creating the Pipeline Configuration Repository</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="3_0_Application_Environment_Overview.html">Setting up the Application Environments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_1_Application_Environments.html">Creating the Application Environments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_2_Helm_Chart_Repo.html">Setting up the Helm Chart Repository</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Openshift</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">ECS-EC2</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-ec2/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">ECS-Fargate</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-fargate/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">General</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../general/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Kubernetes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../kubernetes/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Openshift</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../general/1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Openshift</a></li>
+    <li><a href="2_0_Pipeline_Config_Overview.html">Setting Up a Pipeline</a></li>
+    <li><a href="2_1_Pipeline_Planning.html">Pipeline Planning</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///Users/rahulramakrishnan/Documents/github/antora/sdp-iac/openshift/modules/guides/pages/2_1_Pipeline_Planning.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect1">
+<h2 id="_section_2_1_pipeline_planning"><a class="anchor" href="#_section_2_1_pipeline_planning"></a>Section 2.1 - Pipeline Planning</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_identify_your_source_code"><a class="anchor" href="#_identify_your_source_code"></a>Identify Your Source Code</h3>
+<div class="paragraph">
+<p>Where are you, or your team&#8217;s developers, storing their code? Ideally,
+there&#8217;s some source code management tool (SCM) that&#8217;s being used to
+centralize, share, and manage source code. The SDP takes advantage of
+these features of SCMs in your CI/CD pipelines.</p>
+</div>
+<div class="paragraph">
+<p>Currently, the preferred SCM is <a href="https://github.com/">GitHub</a>, which is where the SDP keeps and
+maintains its source code. Other Git-based SCMS like GitLab are also
+viable, as are other SCMs like Mercurial, though the SDP libraries to
+support them have not yet been created.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_understand_your_pipeline"><a class="anchor" href="#_understand_your_pipeline"></a>Understand Your Pipeline</h3>
+<div class="paragraph">
+<p>A basic DevSecOps, CI/CD Pipeline will do three things: build, deploy,
+and test. It should take the raw source code and change it to a format
+that will run optimally on your platform. It should also take the output
+of the build and deploy it to your platform. Lastly it should be
+automatically testing various aspects of the application and all
+throughout the pipeline - anything from unit tests to penetration tests.</p>
+</div>
+<div class="paragraph">
+<p>There are myriad ways to do any of these three tasks, but because it&#8217;s
+assumed you&#8217;ll be deploying on OpenShift we can make some assumptions
+about your pipeline.</p>
+</div>
+<div class="sect3">
+<h4 id="_building"><a class="anchor" href="#_building"></a>Building</h4>
+<div class="paragraph">
+<p>Since OpenShift is a container application platform, and it&#8217;s assumed
+that your application is being deployed to OpenShift, it can also be
+assumed that your application running as (Docker) containers. The SDP&#8217;s <a href="/sdp-docs/pages/libraries/docker/README.html">Docker library</a>
+makes it easy to build images from your source code repository and store
+them in OpenShift&#8217;s built-in container registry.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Important:</strong></div>
+<div class="paragraph">
+<p>OpenShift has some <a href="https://docs.openshift.com/container-platform/3.9/creating_images/guidelines.html">guidelines around creating container images</a> that it&#8217;s important to be aware of. The section on
+supporting arbitrary user IDs is especially important.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testing"><a class="anchor" href="#_testing"></a>Testing</h4>
+<div class="paragraph">
+<p>The SDP currently has libraries for tools that run <a href="/sdp-docs/pages/libraries/sonarqube/README.html">code quality tests</a>, <a href="/sdp-docs/pages/libraries/a11y/README.html">accessibility compliance (508) tests</a>, <a href="/sdp-docs/pages/libraries/owasp_zap/README.html">penetration tests</a> and more. Which
+ones you should use depends on the needs of your application. Automated
+tests like these are useful for detecting issues earlier in a feature&#8217;s
+lifecycle, where it&#8217;s easier (and cheaper) to correct.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_deploying"><a class="anchor" href="#_deploying"></a>Deploying</h4>
+<div class="paragraph">
+<p>The <a href="/sdp-docs/pages/libraries/openshift/README.html">OpenShift library</a> makes it easy to deploy to different OpenShift projects using <a href="https://helm.sh/">Helm</a>, a
+Kubernetes/OpenShift package manager and templating tool. How to deploy
+an application is defined in a Helm chart or charts, which is maintained
+in your SCM alongside your source code and pipeline configuration. This
+is covered in greater detail in Section 3.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: SDP-IAC</title>
+    <link rel="canonical" href="http://localhost/openshift/1/guides/1_0_Deploy_Tools_Overview.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost">SDP-IAC</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="openshift" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Openshift</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">OpenShift</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="1_0_Deploy_Tools_Overview.html">Section 1 - Deploying the DevOps Tools</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_1_Prepare_To_Install.html">Preparing to Run the Installer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1_2_Run_Installer.html">Running the Installer Script</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="2_0_Pipeline_Config_Overview.html">Setting Up a Pipeline</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2_1_Pipeline_Planning.html">Pipeline Planning</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2_2_Pipeline_Config.html">Creating the Pipeline Configuration Repository</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="3_0_Application_Environment_Overview.html">Setting up the Application Environments</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_1_Application_Environments.html">Creating the Application Environments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3_2_Helm_Chart_Repo.html">Setting up the Helm Chart Repository</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Openshift</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <span class="title">ECS-EC2</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-ec2/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">ECS-Fargate</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecs-fargate/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">General</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../general/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <span class="title">Kubernetes</span>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../kubernetes/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <span class="title">Openshift</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../general/1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Openshift</a></li>
+    <li><a href="1_0_Deploy_Tools_Overview.html">Section 1 - Deploying the DevOps Tools</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///Users/rahulramakrishnan/Documents/github/antora/sdp-iac/openshift/modules/guides/pages/1_0_Deploy_Tools_Overview.adoc">Edit this Page</a></div>
+</div>
+<article class="doc">
+<div class="sect1">
+<h2 id="_section_1_deploying_the_devops_tools"><a class="anchor" href="#_section_1_deploying_the_devops_tools"></a>Section 1 - Deploying the DevOps Tools</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_section_1_overview"><a class="anchor" href="#_section_1_overview"></a>Section 1 Overview</h3>
+<div class="paragraph">
+<p>Once you have completed this section, you should have a functioning
+deployment of the SDP. This includes a Jenkins master, one or more
+Jenkins agents, and services used by SDP libraries, such as SonarQube.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_before_you_begin"><a class="anchor" href="#_before_you_begin"></a>Before You Begin</h3>
+<div class="sect3">
+<h4 id="_you_should_have"><a class="anchor" href="#_you_should_have"></a>You Should Have&#8230;&#8203;</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>A working OpenShift cluster</p>
+</li>
+<li>
+<p>Credentials for a User on that cluster that has the <em>cluster-admin</em>
+role</p>
+</li>
+<li>
+<p>Access to the relevant GitHub Repositories</p>
+</li>
+<li>
+<p>The Helm client installed
+(<a href="https://docs.helm.sh/using_helm/#installing-helm" class="bare">https://docs.helm.sh/using_helm/#installing-helm</a>)</p>
+</li>
+<li>
+<p>The OpenShift CLI installed</p>
+<div class="ulist">
+<ul>
+<li>
+<p>OCP:
+<a href="https://docs.openshift.com/container-platform/3.11/cli_reference/get_started_cli.html" class="bare">https://docs.openshift.com/container-platform/3.11/cli_reference/get_started_cli.html</a></p>
+</li>
+<li>
+<p>OKD:
+<a href="https://docs.okd.io/3.11/cli_reference/get_started_cli.html#cli-reference-get-started-cli" class="bare">https://docs.okd.io/3.11/cli_reference/get_started_cli.html#cli-reference-get-started-cli</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_you_should_be_able_to"><a class="anchor" href="#_you_should_be_able_to"></a>You Should Be Able To&#8230;&#8203;</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Modify simple configuration files</p>
+</li>
+<li>
+<p>Run bash commands/scripts</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_system_requirements"><a class="anchor" href="#_system_requirements"></a>System Requirements</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Your OpenShift cluster meets the minimum hardware requirements as laid
+out in the documentation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>OCP 3.11 (formerly OpenShift Enterprise):
+<a href="https://docs.openshift.com/container-platform/3.11/install/prerequisites.html" class="bare">https://docs.openshift.com/container-platform/3.11/install/prerequisites.html</a></p>
+</li>
+<li>
+<p>OKD 3.11 (formerly OpenShift Origin):
+<a href="https://docs.okd.io/3.11/install/prerequisites.html" class="bare">https://docs.okd.io/3.11/install/prerequisites.html</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Your cluster has enough available CPU and Memory for the SDP
+containers (see below)</p>
+</li>
+<li>
+<p>Your cluster has enough remaining CPU and Memory for your application
+and any additional services (such as Prometheus, for monitoring)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_additional_recommendations"><a class="anchor" href="#_additional_recommendations"></a>Additional Recommendations</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Your OpenShift cluster is able to create Persistent Volumes::</p>
+<div class="ulist">
+<ul>
+<li>
+<p>OCP 3.11:
+<a href="https://docs.openshift.com/container-platform/3.11/install_config/persistent_storage/index.html" class="bare">https://docs.openshift.com/container-platform/3.11/install_config/persistent_storage/index.html</a></p>
+</li>
+<li>
+<p>OKD 3.11:
+<a href="https://docs.okd.io/3.11/install_config/persistent_storage/index.html" class="bare">https://docs.okd.io/3.11/install_config/persistent_storage/index.html</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Your OpenShift cluster is able to dynamically create said Persistent Volumes</p>
+<div class="ulist">
+<ul>
+<li>
+<p>OCP 3.11:
+<a href="https://docs.openshift.com/container-platform/3.11/install_config/persistent_storage/dynamically_provisioning_pvs.html" class="bare">https://docs.openshift.com/container-platform/3.11/install_config/persistent_storage/dynamically_provisioning_pvs.html</a></p>
+</li>
+<li>
+<p>OKD 3.11:
+<a href="https://docs.okd.io/3.11/install_config/persistent_storage/dynamically_provisioning_pvs.html" class="bare">https://docs.okd.io/3.11/install_config/persistent_storage/dynamically_provisioning_pvs.html</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title"><strong>Note:</strong></div>
+While not required to deploy the SDP, persistent volumes allow for
+safely restarting containers without loosing any storage or history. It
+can also make certain pipeline actions faster, such as building Docker
+images.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_container_resource_recommendations"><a class="anchor" href="#_container_resource_recommendations"></a>Container Resource Recommendations</h3>
+<table class="tableblock frame-all grid-all" style="width: 93%;">
+<colgroup>
+<col style="width: 27%;">
+<col style="width: 23%;">
+<col style="width: 28%;">
+<col style="width: 22%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><strong>Container</strong></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CPU (ea.)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Memory (ea.)</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Quantity</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jenkins Master</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1000m</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3000Mi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jenkins Agent</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1000m</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1500Mi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SonarQube</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">250m</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2000Mi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Total</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CPU</strong>: 2250m</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Memory</strong>: 5500Mi</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><em>* While only one Jenkins Agent is required, it&#8217;s highly recommended to
+have more. The quantity depends on how frequently Jenkins builds are
+run.</em></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

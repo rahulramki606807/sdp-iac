@@ -1,0 +1,7 @@
+name: openshift
+title: Openshift
+version: 1
+start_page: ROOT:index.adoc
+nav:
+- modules/ROOT/nav.adoc
+- modules/guides/nav.adoc

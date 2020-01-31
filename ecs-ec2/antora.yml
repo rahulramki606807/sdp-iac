@@ -1,0 +1,6 @@
+name: ecs-ec2
+title: ECS-EC2
+version: 1.0
+start_page: ROOT:index.adoc
+nav:
+- modules/ROOT/nav.adoc

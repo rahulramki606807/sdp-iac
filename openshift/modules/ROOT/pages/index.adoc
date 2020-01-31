@@ -1,0 +1,26 @@
+== OpenShift
+
+=== Overview
+
+When you complete this guide, you should have a functioning deployment
+of the SDP. This includes a Jenkins master, one or more Jenkins agents,
+and services used by SDP libraries, such as SonarQube.
+
+This guide also covers setting up a space in OpenShift that can be
+automatically deployed to using the "OpenShift" SDP Library. This
+includes a Tiller server for deployments via Helm, as well as separate
+application environments such as "Dev" and "Test"
+
+=== Contents
+
+link:guides/1_0_Deploy_Tools_Overview.html[1.0 Deploy Tools Overview] +
+link:guides/1_1_Prepare_To_Install.html[1.1 Prepare to Install] +
+link:guides/1_2_Run_Installer.html[1.2 Run Installer] +
+link:guides/2_0_Pipeline_Config_Overview.html[2.0 Pipeline Config Overview] +
+link:guides/2_1_Pipeline_Planning.html[2.1 Pipeline Planning] +
+link:guides/2_2_Pipeline_Config.html[2.2 Pipeline Config] +
+link:guides/3_0_Application_Environment_Overview.html[3.0 Application Environment Overview] +
+link:guides/3_1_Application_Environments.html[3.1 Applicantion Environment] +
+link:guides/3_2_Helm_Chart_Repo.html[3.2 Helm Chart Repo] +
+ 
+

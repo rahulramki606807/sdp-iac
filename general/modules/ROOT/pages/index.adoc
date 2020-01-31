@@ -1,0 +1,8 @@
+== SDP Reference Architecture
+
+=== Reference Architectures
+
+link:../../openshift/1/index.html[Openshift] +
+link:../../ecs-ec2/1/index.html[ECS-EC2] +
+link:../../ecs-fargate/1/index.html[ECS-Fargate] +
+link:../../kubernetes/1/index.html[Kubernetes]
